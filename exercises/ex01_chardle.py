@@ -12,9 +12,6 @@ length_char: int = len(entered_char)
 if length_char != 1:
     print("Error: Character must be a single character.")
     exit()
-if entered_word.startswith("") == "True":
-    print("Error: Character must be a single character.")
-    exit()
 
 print("Searching for " + entered_char + " in " + entered_word)
 number: int = 0
@@ -37,6 +34,6 @@ if entered_char == entered_word[4]:
 
     
 if number == 0:
-    print("No instances of d found in heels")
+    print("No instances of " + entered_char + " found in heels")
 else:
     print(str(number) + " instances of " + entered_char + " found in " + entered_word)
