@@ -12,6 +12,9 @@ length_char: int = len(entered_char)
 if length_char != 1:
     print("Error: Character must be a single character.")
     exit()
+if entered_word.startswith("") == "True":
+    print("Error: Character must be a single character.")
+    exit()
 
 print("Searching for " + entered_char + " in " + entered_word)
 number: int = 0
