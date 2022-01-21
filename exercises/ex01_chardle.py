@@ -34,6 +34,9 @@ if entered_char == entered_word[4]:
 
     
 if number == 0:
-    print("No instances of " + entered_char + " found in heels")
+    print("No instances of " + entered_char + " found in " + entered_word)
 else:
-    print(str(number) + " instances of " + entered_char + " found in " + entered_word)
+    if number == 1:
+        print("1 instance of " + entered_char + " found in " + entered_word)
+    else:
+        print(str(number) + " instances of " + entered_char + " found in " + entered_word)
