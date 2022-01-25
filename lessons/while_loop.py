@@ -1,7 +1,7 @@
 """An example of a while loop statement."""
 
 counter: int = 0
-maximum: int = int(input("Count up to, but not include what?"))
+maximum: int = int(input("Count up to, but not include what? "))
 
 while counter < maximum:
     counter_squared: int = counter ** 2
