@@ -6,7 +6,7 @@ user_guess: str = input(f"What is your {len(secret)}-letter guess? ")
 length_of_guess: int = len(user_guess)
 while length_of_guess != len(secret):
     user_guess = input(f"That was not {len(secret)} letters! Try again: ")
-    length_of_guess: int = len(user_guess)
+    length_of_guess = len(user_guess)
 
 white_box: str = "\U00002B1C"
 green_box: str = "\U0001F7E9"
