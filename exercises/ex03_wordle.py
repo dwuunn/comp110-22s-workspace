@@ -33,7 +33,7 @@ def emojified(guess_emo: str, secret_emo: str) -> str:
             resulted_emoji = resulted_emoji + green_box
         else:
             resulted_emoji = resulted_emoji + yellow_box
-        i_alt = i_alt + 1
+        i_alt += 1
     return resulted_emoji
 
 
@@ -60,3 +60,7 @@ def main() -> None:
     print(f"You won in {str(i_turn-1)}/6 turns!")
     if i_turn > 6:
         print("X/6 - Sorry, try again tomorrow!")
+
+
+if __name__ == "__main__":
+    main()
