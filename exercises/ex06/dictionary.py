@@ -37,7 +37,8 @@ def count(alist: list[str]) -> dict[str, int]:
     i: int = 1
     for item in alist:
         if item in count_color:
-            count_color[item] = i + 1
+            count_color[item] += 1
+
         else:
             count_color[item] = i
     return count_color

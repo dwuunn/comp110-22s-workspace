@@ -56,5 +56,5 @@ def test_count_one() -> None:
 
 def test_count_two() -> None:
     """Case two."""
-    ltwo: list[str] = ["arth", "econ", "astr", "arth", "astr"]
-    assert count(ltwo) == {"arth": 2, "astr": 2, "econ": 1}
+    ltwo: list[str] = ["arth", "econ", "astr", "arth", "astr", "arth", "astr", "arth", "astr", "arth", "astr", "arth", "astr"]
+    assert count(ltwo) == {"arth": 6, "astr": 6, "econ": 1}
